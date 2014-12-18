@@ -1,0 +1,16 @@
+{
+  "name": "kurea-contrib-wolfram",
+  "main": "index.coffee",
+  "version": "0.0.0",
+  "description": "A WolframAlpha query module for Kurea.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kellyirc/kurea-contrib-wolfram"
+  },
+  "dependencies": {
+    "node-wolfram": "0.0.1",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.4.0"
+  }
+}
