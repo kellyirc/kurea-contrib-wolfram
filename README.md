@@ -18,7 +18,7 @@ To install from Kurea at runtime, give Kurea this command:
 
 ## Usage
 
-`!wolfram args...`
+`!wolfram query`
 
- - `args...`: a list of arguments
+ - `query`: the WolframAlpha query you want an answer for
  
