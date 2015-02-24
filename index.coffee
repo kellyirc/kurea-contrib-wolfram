@@ -1,7 +1,6 @@
 module.exports = (Module) ->
 	Client = require 'node-wolfram'
-	_ = require 'underscore'
-	_.str = require 'underscore.string'
+	_ = require 'lodash'
 	
 	class WolframModule extends Module
 		shortName: "Wolfram"
@@ -48,7 +47,7 @@ module.exports = (Module) ->
 						[response, primary] = @parseResponse response
 						for title, texts of response
 							# Post to channel only input and primary pod
-							if _.str.startsWith(title, "Input") or title is primary
+							if _.startsWith(title, "Input") or title is primary
 								if texts instanceof Array
 									for text in texts
 										@reply origin, "#{title}: #{text}"
@@ -67,7 +66,7 @@ module.exports = (Module) ->
 				for subpod in pod.subpod
 					hasText = false
 					for text in subpod.plaintext
-						if not _.str.isBlank(text)
+						if not _.isEmpty(text)
 							result[title].push text
 							hasText = true
 					if not hasText

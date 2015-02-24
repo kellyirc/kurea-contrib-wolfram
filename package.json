@@ -9,8 +9,7 @@
     "url": "https://github.com/kellyirc/kurea-contrib-wolfram"
   },
   "dependencies": {
-    "node-wolfram": "0.0.1",
-    "underscore": "^1.7.0",
-    "underscore.string": "^2.4.0"
+    "lodash": "^3.3.0",
+    "node-wolfram": "0.0.1"
   }
 }
